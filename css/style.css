@@ -1,8 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -27,6 +26,8 @@ body {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 h1 {
@@ -52,12 +53,14 @@ h4 {
   color: #67676d;
   font-size: 13px;
   font-weight: 600;
+  margin: 0 0 0 14px;
 }
 
 p {
   color: #959595;
   margin: 0 0 30px;
   line-height: 1.75;
+  padding: 0 15px;
 }
 
 header {
@@ -67,7 +70,7 @@ header {
   background-repeat: no-repeat;
   color: #fff;
   height: 100vh;
-  padding: 50px 0 1px;
+  padding: 50px;
 }
 
 header .logo {
@@ -112,14 +115,93 @@ header .header-title {
 header .header-description {
   color: #fff;
   font-size: 13px;
+  padding: 0;
+}
+
+.start-news {
+  position: relative;
 }
 
 .start-news img {
   position: absolute;
-  bottom: 0;
-  right: 0;
+  bottom: 200px;
+  right: -50px;
   max-height: 100vh;
   z-index: 2;
+}
+
+.gallery [class*="box-"] {
+  height: 200px;
+  padding: 0;
+  position: relative;
+  transition: .5s;
+}
+
+.gallery .box-1 {
+  background-color: #f5989d;
+}
+
+.gallery .box-1:hover {
+  background-color: #ce5f65;
+}
+
+.gallery .box-2 {
+  background-color: #615f7d;
+}
+
+.gallery .box-2:hover {
+  background-color: #484667;
+}
+
+.gallery .box-3 {
+  background-image: url("https://images.pexels.com/photos/458555/pexels-photo-458555.jpeg?w=760&h=375&auto=compress&cs=tinysrgb");
+  background-size: cover;
+  background-position: center;
+}
+
+.gallery .box-4 {
+  background-color: #bd8cbf;
+}
+
+.gallery .box-4:hover {
+  background-color: #9c5d9e;
+}
+
+.gallery .box-5 {
+  background-image: url("https://images.pexels.com/photos/442559/pexels-photo-442559.jpeg?w=630&h=375&dpr=2&auto=compress&cs=tinysrgb");
+  background-size: cover;
+  background-position: center;
+}
+
+.gallery .box-6 {
+  background-color: #82ca9c;
+}
+
+.gallery .box-6:hover {
+  background-color: #57ae77;
+}
+
+.gallery .box-7 {
+  background-image: url("images/sign-6.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.gallery button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  right: 50px;
+}
+
+.pixel-image {
+  height: 90vh;
+  background-image: url("images/car.jpg");
+  background-size: cover;
+  margin-top: 150px;
+  position: relative;
+  color: white;
 }
 
 .page-footer {
@@ -168,7 +250,6 @@ header .header-description {
   float: left;
   padding: 15px;
   width: 80%;
-  -webkit-transition: .5s;
   transition: .5s;
 }
 
@@ -187,16 +268,12 @@ header .header-description {
 
 .page-footer footer form footer form input:focus,
 .page-footer footer form input:focus + button.btn {
-  -webkit-box-shadow: 0 0 10px #fff;
-          box-shadow: 0 0 10px #fff;
+  box-shadow: 0 0 10px #fff;
   outline: none;
 }
 
 footer .row .row {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
 }
 
 footer .row .row .col-1 {
@@ -206,4 +283,305 @@ footer .row .row .col-1 {
 footer > .container > .row > .col-1:nth-of-type(2) {
   margin-left: 50px;
 }
+
+@media (max-width: 767px) {
+  .col-sm-1 {
+    width: 8.33333%;
+  }
+  .col-offset-sm-1 {
+    margin-left: 8.33333%;
+  }
+  .col-sm-2 {
+    width: 16.66667%;
+  }
+  .col-offset-sm-2 {
+    margin-left: 16.66667%;
+  }
+  .col-sm-3 {
+    width: 25%;
+  }
+  .col-offset-sm-3 {
+    margin-left: 25%;
+  }
+  .col-sm-4 {
+    width: 33.33333%;
+  }
+  .col-offset-sm-4 {
+    margin-left: 33.33333%;
+  }
+  .col-sm-5 {
+    width: 41.66667%;
+  }
+  .col-offset-sm-5 {
+    margin-left: 41.66667%;
+  }
+  .col-sm-6 {
+    width: 50%;
+  }
+  .col-offset-sm-6 {
+    margin-left: 50%;
+  }
+  .col-sm-7 {
+    width: 58.33333%;
+  }
+  .col-offset-sm-7 {
+    margin-left: 58.33333%;
+  }
+  .col-sm-8 {
+    width: 66.66667%;
+  }
+  .col-offset-sm-8 {
+    margin-left: 66.66667%;
+  }
+  .col-sm-9 {
+    width: 75%;
+  }
+  .col-offset-sm-9 {
+    margin-left: 75%;
+  }
+  .col-sm-10 {
+    width: 83.33333%;
+  }
+  .col-offset-sm-10 {
+    margin-left: 83.33333%;
+  }
+  .col-sm-11 {
+    width: 91.66667%;
+  }
+  .col-offset-sm-11 {
+    margin-left: 91.66667%;
+  }
+  .col-sm-12 {
+    width: 100%;
+  }
+  .col-offset-sm-12 {
+    margin-left: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .col-md-1 {
+    width: 8.33333%;
+  }
+  .col-offset-md-1 {
+    margin-left: 8.33333%;
+  }
+  .col-md-2 {
+    width: 16.66667%;
+  }
+  .col-offset-md-2 {
+    margin-left: 16.66667%;
+  }
+  .col-md-3 {
+    width: 25%;
+  }
+  .col-offset-md-3 {
+    margin-left: 25%;
+  }
+  .col-md-4 {
+    width: 33.33333%;
+  }
+  .col-offset-md-4 {
+    margin-left: 33.33333%;
+  }
+  .col-md-5 {
+    width: 41.66667%;
+  }
+  .col-offset-md-5 {
+    margin-left: 41.66667%;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-offset-md-6 {
+    margin-left: 50%;
+  }
+  .col-md-7 {
+    width: 58.33333%;
+  }
+  .col-offset-md-7 {
+    margin-left: 58.33333%;
+  }
+  .col-md-8 {
+    width: 66.66667%;
+  }
+  .col-offset-md-8 {
+    margin-left: 66.66667%;
+  }
+  .col-md-9 {
+    width: 75%;
+  }
+  .col-offset-md-9 {
+    margin-left: 75%;
+  }
+  .col-md-10 {
+    width: 83.33333%;
+  }
+  .col-offset-md-10 {
+    margin-left: 83.33333%;
+  }
+  .col-md-11 {
+    width: 91.66667%;
+  }
+  .col-offset-md-11 {
+    margin-left: 91.66667%;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+  .col-offset-md-12 {
+    margin-left: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .col-lg-1 {
+    width: 8.33333%;
+  }
+  .col-offset-lg-1 {
+    margin-left: 8.33333%;
+  }
+  .col-lg-2 {
+    width: 16.66667%;
+  }
+  .col-offset-lg-2 {
+    margin-left: 16.66667%;
+  }
+  .col-lg-3 {
+    width: 25%;
+  }
+  .col-offset-lg-3 {
+    margin-left: 25%;
+  }
+  .col-lg-4 {
+    width: 33.33333%;
+  }
+  .col-offset-lg-4 {
+    margin-left: 33.33333%;
+  }
+  .col-lg-5 {
+    width: 41.66667%;
+  }
+  .col-offset-lg-5 {
+    margin-left: 41.66667%;
+  }
+  .col-lg-6 {
+    width: 50%;
+  }
+  .col-offset-lg-6 {
+    margin-left: 50%;
+  }
+  .col-lg-7 {
+    width: 58.33333%;
+  }
+  .col-offset-lg-7 {
+    margin-left: 58.33333%;
+  }
+  .col-lg-8 {
+    width: 66.66667%;
+  }
+  .col-offset-lg-8 {
+    margin-left: 66.66667%;
+  }
+  .col-lg-9 {
+    width: 75%;
+  }
+  .col-offset-lg-9 {
+    margin-left: 75%;
+  }
+  .col-lg-10 {
+    width: 83.33333%;
+  }
+  .col-offset-lg-10 {
+    margin-left: 83.33333%;
+  }
+  .col-lg-11 {
+    width: 91.66667%;
+  }
+  .col-offset-lg-11 {
+    margin-left: 91.66667%;
+  }
+  .col-lg-12 {
+    width: 100%;
+  }
+  .col-offset-lg-12 {
+    margin-left: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .col-xl-1 {
+    width: 8.33333%;
+  }
+  .col-offset-xl-1 {
+    margin-left: 8.33333%;
+  }
+  .col-xl-2 {
+    width: 16.66667%;
+  }
+  .col-offset-xl-2 {
+    margin-left: 16.66667%;
+  }
+  .col-xl-3 {
+    width: 25%;
+  }
+  .col-offset-xl-3 {
+    margin-left: 25%;
+  }
+  .col-xl-4 {
+    width: 33.33333%;
+  }
+  .col-offset-xl-4 {
+    margin-left: 33.33333%;
+  }
+  .col-xl-5 {
+    width: 41.66667%;
+  }
+  .col-offset-xl-5 {
+    margin-left: 41.66667%;
+  }
+  .col-xl-6 {
+    width: 50%;
+  }
+  .col-offset-xl-6 {
+    margin-left: 50%;
+  }
+  .col-xl-7 {
+    width: 58.33333%;
+  }
+  .col-offset-xl-7 {
+    margin-left: 58.33333%;
+  }
+  .col-xl-8 {
+    width: 66.66667%;
+  }
+  .col-offset-xl-8 {
+    margin-left: 66.66667%;
+  }
+  .col-xl-9 {
+    width: 75%;
+  }
+  .col-offset-xl-9 {
+    margin-left: 75%;
+  }
+  .col-xl-10 {
+    width: 83.33333%;
+  }
+  .col-offset-xl-10 {
+    margin-left: 83.33333%;
+  }
+  .col-xl-11 {
+    width: 91.66667%;
+  }
+  .col-offset-xl-11 {
+    margin-left: 91.66667%;
+  }
+  .col-xl-12 {
+    width: 100%;
+  }
+  .col-offset-xl-12 {
+    margin-left: 100%;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

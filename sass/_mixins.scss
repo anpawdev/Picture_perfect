@@ -1,0 +1,13 @@
+@mixin grid($prefix) {
+    @for $i from 1 through 12 {
+        $width: 100% / 12 * $i;
+
+        .col-#{$prefix}-#{$i} {
+            width: $width;
+        }
+
+        .col-offset-#{$prefix}-#{$i} {
+            margin-left: $width;
+        }
+    }
+}

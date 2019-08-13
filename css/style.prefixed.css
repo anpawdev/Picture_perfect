@@ -230,6 +230,96 @@ header .header-description {
   font-size: 13px;
 }
 
+.reasons {
+  background-color: #81c99b;
+  padding-bottom: 140px;
+  color: #fff;
+  position: relative;
+}
+
+.reasons h2 {
+  padding: 100px 0 50px 10px;
+}
+
+.reasons h4 {
+  color: #fff;
+}
+
+.reasons p {
+  color: #fff;
+}
+
+.buy-now {
+  background-color: #f6f7fa;
+  padding-top: 100px;
+  padding-bottom: 150px;
+}
+
+.buy-now .buy-box {
+  float: left;
+  padding: 45px;
+  min-height: 380px;
+  margin: 0 15px;
+  width: calc(50% - 30px);
+}
+
+.buy-now .buy-box:hover {
+  background-color: white;
+  box-shadow: 0px 0px 20px 20px rgba(128, 128, 128, 0.1);
+}
+
+.buy-now .buy-box:hover .badge {
+  background-color: #bd8bbf;
+}
+
+.buy-now .buy-box h3 {
+  padding: 12px 0;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.buy-now .buy-box p {
+  padding: 0 0 24px 0;
+  max-width: 425px;
+}
+
+.buy-now .buy-box .fa {
+  display: inline-block;
+  padding-right: 10px;
+  color: #c5c5c5;
+  font-size: 30px;
+}
+
+.buy-now .badge {
+  color: white;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 5px 12px;
+  border-radius: 4px;
+  background-color: #e1e1e1;
+  display: inline;
+}
+
+.buy-now .btn {
+  width: 150px;
+  height: 45px;
+  background-color: #81c99b;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 5px 12px;
+  border-radius: 3px;
+  background-color: #81c99b;
+  color: #fff;
+  border: 0;
+  margin-bottom: 20px;
+}
+
+.buy-now .btn:hover {
+  background-color: #59a77a;
+}
+
 .page-footer {
   background: #192331;
   padding: 125px 0;
@@ -770,26 +860,4 @@ header .header-description {
   margin-top: 65px;
   margin-bottom: 25px;
 }
-
-/* ********** ONE COLOR ********** */
-.oneColor {
-  background-color: #81c99b;
-  padding-bottom: 140px;
-  color: white;
-  position: relative;
-}
-
-.oneColor .side-rotate-logo {
-  top: 174px;
-}
-
-.oneColor h1 {
-  padding: 125px 0 65px 15px;
-}
-
-.oneColor p {
-  padding-top: 20px;
-}
-
-/* ******* BUYING ********** */
 /*# sourceMappingURL=style.prefixed.css.map */

@@ -53,6 +53,7 @@ h2 {
     font-weight: 300;
     padding-left: 15px;
     padding-right: 15px;
+    margin-bottom: 20px;
 }
 
 h3 {
@@ -135,81 +136,112 @@ header {
 .start-news {
     position: relative;
     color: #959595;
-    margin-top: 100px;
+    margin-top: 50px;
+
     img {
         position: absolute;
-        bottom: 200px;
+        bottom: 250px;
         right: -50px;
         max-height: 100vh;
         z-index: 2;
     }
 }
 
-
-
-// .intro  h1 {  
-//     margin-bottom: 10px;
-// } 
-
-// .intro p {
-//     font-size: 13px;
-//     padding: 10px 15px;
-// } 
-
 //gallery
 
 .gallery {
+    margin-left: 375px;
+    width: auto;
+
     [class*="box-"] {
-        height: 200px;
-        padding: 0;
         position: relative;
-        transition: .5s;
+        height: 280px;
+        padding: 30px;
+        color: #fff;
+        transition: 0.2s;
     }
+
+    p {
+        color: #fff;
+    }
+
+    a {
+        position: absolute;
+        bottom: 40px;
+    }
+
+    .fa {
+        position:absolute;
+        right: 40px;
+        bottom: 40px;
+        font-size: 18px;
+        color: #fff;
+    }
+
     .box-1 {
         background-color: #f5989d;
         &:hover {
             background-color: #ce5f65;
         }
     }
+
     .box-2 {
         background-color: #615f7d;
         &:hover {
             background-color: #484667
         }
     }
+
     .box-3 {
         background-image: url('../images/clients.jpg');
         background-size: cover;
         background-position: center;
     }
+
     .box-4 {
         background-color: #bd8cbf;
         &:hover {
             background-color: #9c5d9e;
         }
     }
+
     .box-5 {
-        background-image: url("..images/check.jpg");
+        background-image: url('../images/sign-4.jpg');
         background-size: cover;
         background-position: center;
     }
+
     .box-6 {
         background-color: #82ca9c;
         &:hover {
             background-color: #57ae77;
         }
     }
+
     .box-7 {
         background-image: url('../images/sign-6.jpg');
         background-size: cover;
         background-position: center;
     }
+
     button {
         background: transparent;
         border: none;
         cursor: pointer;
         font-size: 20px;
         right: 50px;
+    }
+}
+
+//details
+
+.details {
+    color: #959595;
+    margin-top: 60px;
+
+    h4 {
+        margin-top: 40px;
+        margin-bottom: 25px;
     }
 }
 
@@ -223,13 +255,18 @@ header {
     color: #fff;
     
     .pixel-title {
+        position: absolute;
+        top: 50%;
+
         h1 {
-            color: white;
-            font-size: 60px;
-            max-width: 540px;
+        color: white;
+        font-size: 60px;
+        max-width: 505px;
+        padding-left: 15px;
         }
+
         p {
-            padding: 20px 15px;
+        padding: 20px 15px;
         max-width: 480px;
         font-size: 13px;
         }
@@ -424,177 +461,9 @@ header {
     @include grid('xl');
 }
 
-
-
-// a span {
-//     font-weight: 300;
-//     padding-left: 30px;
-// }
-
-
-
-
-
-
-/* ************ BOX GRID **************** */
-.box-grid  {
-    max-width: 1600px;
-    margin-left: calc((100% - 1170px) / 2);
-    margin-top: 80px;
-}
-
-.box {
-    position: relative;
-    height: 280px;
-    padding: 30px;
-    color: white;
-}
-
-.box p {
-    margin: 20px 0;
-}
-
-.box.sign p {
-    max-width: 450px;
-}
-
-.box a {
-    position: absolute;
-    bottom: 40px;
-}
-
-.link:hover {
-    color: black;
-    text-shadow: 1px 1px 1px white, -1px -1px 1px white, 1px -1px 1px white, -1px 1px 1px white;
-}
-
-.box .fa {
-    position:absolute;
-    right: 40px;
-    bottom: 40px;
-    font-size: 18px;
-}
-
-.box .fa-heart {
-    display: none;
-    color: red;
-}
-
-.box .heart:hover .fa-heart-o {
-    display: none;
-}
-
-.box .heart:hover .fa-heart {
-    display: block;
-}
-
-.box.design {
-    background-color: #f5979c;
-}
-
-.box.design:hover {
-    background-color: #d3757a;
-}
-
-.box.built {
-    background-color: #615e7d;
-}
-
-.box.built:hover {
-    background-color: #393c5b;
-}
-
-.box.clients {
-    background-color: #091e28;
-    background: url('../img/clients.jpg') 0 100%;
-    background-size: cover;
-}
-
-.box.clients:before {
-        content: url('../img/clients-2.jpg');
-        width: 0;
-        height: 0;
-        visibility: hidden;
-        display: none;
-}
-
-.box.clients:hover {
-    background: url('../img/clients-2.jpg') 0 100%;
-    background-size: cover;
-}
-
-.box.shoot {
-    background-color: #bc8cbe;
-}
-
-.box.shoot:hover {
-    background-color: #9b6a9c;
-}
-
-.box.sign {
-    background-color: #091e28; 
-    background: url('../img/sign-4.jpg') 0 85%;
-    background-size: cover;
-}
-
-.box.sign:before {
-        content: url('../img/sign-2.jpg');
-        width: 0;
-        height: 0;
-        /* visibility: hidden; */
-        display: none;
-}
-
-.box.sign:hover {
-    background: url('../img/sign-2.jpg') 0 70%;
-    background-size: cover;
-}
-
-.box.perfect {
-    background-color: #81c99c;
-}
-
-.box.perfect:hover {
-    background-color: #59a77a;
-}
-
-.box.start {
-    background-color: #091e28;
-    background: url('../img/starts.jpg') 0 50%;
-    background-size: cover;
-}
-
-.box.start:before {
-        content: url('../img/starts-2.jpg');
-        width: 0;
-        height: 0;
-        visibility: hidden;
-        display: none;
-}
-
-.box.start:hover {
-    background: url('../img/starts-2.jpg') 0 70%;
-    background-size: cover;
-}
-
-/* ******** FOUR COLUMN ********* */
-.fourCol {
-    width: 100%;
-    position: relative;
-    color: #959595;
-}
-.fourCol .side-rotate-logo {
-    top: 45px;
-    left: 23px;
-}
-
-.fourCol .container {
-    color: #959595;
-    margin-top: 80px;
-    position: relative;
-}
-
-.fourCol h3 {
-    margin-top: 65px;
-    margin-bottom: 25px;
+@media (max-width: 1200px) {
+    .gallery {
+        margin: 0;
+        width: auto;
+    }
 }

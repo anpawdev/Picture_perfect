@@ -510,9 +510,74 @@ header .header-description {
   .col-offset-sm-12 {
     margin-left: 100%;
   }
+  header {
+    background-position: center;
+  }
+  header .header-title {
+    width: 100%;
+  }
+  .phone {
+    display: none;
+  }
+  .gallery {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .gallery [class*="box-"] {
+    padding: 5px;
+    min-height: 400px;
+  }
+  .gallery .fa {
+    right: 15px;
+  }
+  .pixel-image {
+    margin-top: 0;
+    text-align: center;
+    height: 85vh;
+  }
+  .pixel-image .pixel-title {
+    top: 10%;
+  }
+  .pixel-image .pixel-title h1 {
+    padding-left: 0;
+  }
+  .reasons {
+    text-align: center;
+    padding: 0;
+  }
+  .reasons h2 {
+    padding: 25px;
+  }
+  .buy-now {
+    padding: 0;
+    text-align: center;
+  }
+  .buy-now .buy-box {
+    padding: 25px;
+    margin: auto;
+    width: 100%;
+  }
+  .buy-now .buy-box .badge {
+    background-color: #bd8bbf;
+  }
+  .page-footer {
+    padding: 25px;
+  }
+  .page-footer .footer-links {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .page-footer .footer-links h4 {
+    padding: 8px;
+  }
+  .page-footer form button.btn {
+    min-width: 40px;
+  }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .col-md-1 {
     width: 8.33333%;
   }
@@ -584,6 +649,18 @@ header .header-description {
   }
   .col-offset-md-12 {
     margin-left: 100%;
+  }
+  .phone img {
+    height: 50vh;
+    right: 0;
+    bottom: 450px;
+  }
+  .gallery .row {
+    display: flex;
+  }
+  .gallery [class*="box-"] {
+    padding: 5px;
+    min-height: 350px;
   }
 }
 
@@ -659,6 +736,9 @@ header .header-description {
   }
   .col-offset-lg-12 {
     margin-left: 100%;
+  }
+  [class*="box-"] {
+    min-height: 400px;
   }
 }
 

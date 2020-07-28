@@ -447,14 +447,121 @@ header {
 
 @media (max-width: 767px) {
     @include grid('sm');
+
+    header {
+        background-position: center;
+        
+        .header-title {
+            width: 100%;
+        }
+    }
+
+    .phone {
+        display: none;
+    }
+
+    .gallery {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        [class*="box-"] {
+            padding: 5px;    
+            min-height: 400px;   
+        }
+
+        .fa {
+            right: 15px;
+        }
+    }
+
+    .pixel-image {
+        margin-top: 0;
+        text-align: center;
+        height: 85vh;
+
+        .pixel-title {
+            top: 10%;
+
+            h1 {
+                padding-left: 0;
+            }
+        }
+    }
+
+    .reasons {
+        text-align: center;
+        padding: 0;
+
+        h2 {
+            padding: 25px;
+        }
+    }
+
+    .buy-now {     
+        padding: 0;
+        text-align: center;
+    
+        .buy-box {
+            padding: 25px;
+            margin: auto;
+            width: 100%;
+            
+            .badge {
+                background-color: #bd8bbf;
+            }
+        }
+    }
+
+    .page-footer {
+        padding: 25px;
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+
+            h4 {
+                padding: 8px;
+            }
+        }
+        
+        form {
+            button.btn {
+                min-width: 40px;
+            }
+        }
+    }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 991px) {
     @include grid('md');
+
+    .phone img {
+        height: 50vh;
+        right: 0;
+        bottom: 450px;
+    }
+
+    .gallery {
+        
+        .row {
+            display: flex;
+        }
+
+        [class*="box-"] {
+            padding: 5px;   
+            min-height: 350px;  
+        }
+    }
 }
 
 @media (min-width: 992px) {
     @include grid('lg');
+
+    [class*="box-"] {  
+        min-height:400px;  
+    }
 }
 
 @media (min-width: 1200px) {
